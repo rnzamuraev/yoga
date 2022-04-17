@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
   // Tabs
@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  infoHeader.addEventListener("click", function (event) {
+  infoHeader.addEventListener("click", (event) => {
     if (event.target && event.target.classList.contains("info-header-tab")) {
       for (let i = 0; i < tabs.length; i++) {
         if (event.target == tabs[i]) {
@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // Timer
 
-  const deadline = "2022-04-14";
+  const deadline = "2022-04-18";
 
   function getTimeRemaining(endtime) {
     let t = Date.parse(endtime) - Date.parse(new Date()),
@@ -82,4 +82,28 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   setClock("timer", deadline);
+
+  // Pop-ap
+
+  const overlay = document.querySelector(".overlay"),
+    more = document.querySelector(".more"),
+    popupClose = document.querySelector(".popup-close");
+
+  more.addEventListener("click", () => {
+    overlay.style.display = "block";
+    document.body.style.overflow = "hidden";
+    this.classList.add("more-splash");
+  });
+  popupClose.addEventListener("click", () => {
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+    this.classList.remove("more-splash");
+  });
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      overlay.style.display = "none";
+      document.body.style.overflow = "";
+      this.classList.remove("more-splash");
+    }
+  });
 });
