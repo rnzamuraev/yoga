@@ -1,14 +1,16 @@
 function calc() {
   const peoplesInput = document.getElementsByClassName(
-      "counter-block-input"
-    )[0],
-    daysInput = document.getElementsByClassName("counter-block-input")[1],
-    choose = document.getElementById("select"),
-    totalValue = document.getElementById("total");
+    "counter-block-input"
+  )[0];
+  const daysInput = document.getElementsByClassName(
+    "counter-block-input"
+  )[1];
+  const choose = document.getElementById("select");
+  const totalValue = document.getElementById("total");
 
-  let peoples = 0,
-    days = 0,
-    total = 0;
+  let peoples = 0;
+  let days = 0;
+  let total = 0;
 
   totalValue.innerHTML = 0;
 
@@ -20,9 +22,10 @@ function calc() {
     } else {
       total = peoples * days * 3000;
     }
-    let n = total;
+    const n = total;
 
-    totalValue.innerHTML = n * choose.options[choose.selectedIndex].value;
+    totalValue.innerHTML =
+      n * choose.options[choose.selectedIndex].value;
   });
 
   daysInput.addEventListener("input", function () {
@@ -33,16 +36,18 @@ function calc() {
     } else {
       total = peoples * days * 3000;
     }
-    let n = total;
+    const n = total;
 
-    totalValue.innerHTML = n * choose.options[choose.selectedIndex].value;
+    totalValue.innerHTML =
+      n * choose.options[choose.selectedIndex].value;
   });
 
   choose.addEventListener("change", function () {
-    let n = total;
+    const n = total;
 
-    totalValue.innerHTML = n * this.options[this.selectedIndex].value;
+    totalValue.innerHTML =
+      n * this.options[this.selectedIndex].value;
   });
 }
 
-module.exports = calc;
+export default calc;

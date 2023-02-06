@@ -1,20 +1,29 @@
 // require("es6-promise").polyfill();
-require("nodelist-foreach-polyfill");
-require("formdata-polyfill");
+// require("nodelist-foreach-polyfill");
+// require("formdata-polyfill");
 
-window.addEventListener("DOMContentLoaded", function () {
+// const { default: calc } = require("./parts/calc");
+// const { default: form } = require("./parts/form");
+// const { default: modal } = require("./parts/modal");
+// const { default: slider } = require("./parts/slider");
+// const { default: tabs } = require("./parts/tabs");
+// const { default: timer } = require("./parts/timer");
+import "../css/style";
+
+import tabs from "./parts/tabs";
+import timer from "./parts/timer";
+import slider from "./parts/slider";
+import calc from "./parts/calc";
+import form from "./parts/form";
+import modal from "./parts/modal";
+
+window.addEventListener("DOMContentLoaded", () => {
   "use strict";
-  let tabs = require("./parts/tabs.js"),
-    timer = require("./parts/timer.js"),
-    modal = require("./parts/modal.js"),
-    form = require("./parts/form.js"),
-    slider = require("./parts/slider.js"),
-    calc = require("./parts/calc.js");
 
   tabs();
   timer();
-  modal();
-  form();
   slider();
   calc();
+  form();
+  modal();
 });

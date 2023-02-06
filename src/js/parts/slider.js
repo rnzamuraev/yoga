@@ -1,9 +1,9 @@
 function slider() {
-  const slides = document.querySelectorAll(".slider-item"),
-    prev = document.querySelector(".prev"),
-    next = document.querySelector(".next"),
-    sliderDots = document.querySelector(".slider-dots"),
-    dots = document.querySelectorAll(".dot");
+  const slides = document.querySelectorAll(".slider-item");
+  const prev = document.querySelector(".slider-prev");
+  const next = document.querySelector(".slider-next");
+  const sliderDots = document.querySelector(".slider-dots");
+  const dots = document.querySelectorAll(".dot");
 
   let slideIndex = 1;
 
@@ -18,7 +18,7 @@ function slider() {
       slide.style.display = "none";
     });
     slides[slideIndex - 1].style.display = "block";
-    for (let dot of dots) {
+    for (const dot of dots) {
       dot.classList.remove("dot-active");
     }
     dots[slideIndex - 1].classList.add("dot-active");
@@ -42,14 +42,17 @@ function slider() {
   });
 
   sliderDots.addEventListener("click", function (event) {
-    let target = event.target;
+    const target = event.target;
 
     for (let i = 0; i < dots.length + 1; i++) {
-      if (target.classList.contains("dot") && target == dots[i - 1]) {
+      if (
+        target.classList.contains("dot") &&
+        target == dots[i - 1]
+      ) {
         currentSlide(i);
       }
     }
   });
 }
 
-module.exports = slider;
+export default slider;

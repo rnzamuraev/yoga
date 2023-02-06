@@ -1,0 +1,13 @@
+.content {
+  width: 100%;
+  min-height: 3000px;
+  background: url(../img/main_bg.jpg);
+  background-position: 50% 30%;
+  @import "./content/info";
+  @import "./content/timer";
+  @import "./content/slider";
+  @import "./content/counter";
+  @import "./content/more";
+  @import "./content/contacts";
+  @import "./content/_footer";
+}

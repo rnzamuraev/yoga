@@ -1,0 +1,92 @@
+.timer {
+  margin-top: 150px;
+  text-align: center;
+  &-title {
+    font-size: 34px;
+    color: $main-color;
+  }
+  &-action {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 40px;
+  }
+  &-numbers {
+    margin-top: 40px;
+    font-size: 90px;
+    color: $main-color;
+    &:after {
+      content: "";
+      display: block;
+      width: 20%;
+      height: 1px;
+      background-color: $main-color;
+      margin: 0 auto;
+      margin-top: 4px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .timer {
+    &-numbers {
+      &:after {
+        width: 22%;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .timer {
+    &-numbers {
+      &:after {
+        width: 29%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .timer {
+    &-title {
+      padding: 0 35px;
+    }
+    &-numbers {
+      &:after {
+        width: 35%;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .timer {
+    &-title {
+      padding: 0 0px;
+    }
+     &-action {
+      font-size: 20px;
+    }
+    &-numbers {
+      font-size: 68px;
+      &:after {
+        width: 36%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .timer {
+    margin-top: 100px;
+    &-title {
+      padding: 0 0px;
+      font-size: 26px;
+    }
+    &-action {
+      margin-top: 30px;
+    }
+    &-numbers {
+      margin-top: 30px;
+      font-size: 45px;
+      &:after {
+        width: 37%;
+      }
+    }
+  }
+}

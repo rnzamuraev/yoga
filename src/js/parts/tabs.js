@@ -1,7 +1,11 @@
 function tabs() {
-  const tabs = document.querySelectorAll(".info-header-tab"),
-    tabContents = document.querySelectorAll(".info-tabcontent"),
-    infoHeader = document.querySelector(".info-header");
+  const tabs = document.querySelectorAll(
+    ".info-header-tab"
+  );
+  const tabContents = document.querySelectorAll(
+    ".info-tabcontent"
+  );
+  const infoHeader = document.querySelector(".info-header");
 
   function hideTabContent(a) {
     for (let i = a; i < tabContents.length; i++) {
@@ -19,7 +23,10 @@ function tabs() {
   }
 
   infoHeader.addEventListener("click", (event) => {
-    if (event.target && event.target.classList.contains("info-header-tab")) {
+    if (
+      event.target &&
+      event.target.classList.contains("info-header-tab")
+    ) {
       for (let i = 0; i < tabs.length; i++) {
         if (event.target == tabs[i]) {
           hideTabContent(0);
@@ -31,4 +38,4 @@ function tabs() {
   });
 }
 
-module.exports = tabs;
+export default tabs;

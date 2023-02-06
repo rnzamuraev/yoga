@@ -1,7 +1,7 @@
 function modal() {
-  const overlay = document.querySelector(".overlay"),
-    more = document.querySelector(".more"),
-    popupClose = document.querySelector(".popup-close");
+  const overlay = document.querySelector(".overlay");
+  const more = document.querySelector(".more");
+  const popupClose = document.querySelector(".popup-close");
 
   more.addEventListener("click", function () {
     overlay.style.display = "block";
@@ -22,4 +22,4 @@ function modal() {
   });
 }
 
-module.exports = modal;
+export default modal;

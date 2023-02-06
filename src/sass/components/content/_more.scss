@@ -1,0 +1,15 @@
+.more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid $main-color;
+  font-size: 18px;
+  color: $main-color;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 10px $main-color;
+  }
+}
