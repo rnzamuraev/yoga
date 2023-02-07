@@ -125,14 +125,33 @@
     }
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 768px) {
+  .info {
+    &-header {
+      &-tab {
+        // color: $main-color;
+        // font-weight: bold;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
   .info {
     padding: 50px 30px;
+    &-header {
+      &-tab {
+        // color: $main-color;
+        // font-weight: bold;
+        font-size: 20px;
+      }
+    }
     &-tabcontent {
       padding-top: 30px;
       .description {
         // padding-top: 40px;
         &-title {
+          font-size: 26px;
           &:after {
             // content: "";
             // display: block;
@@ -165,7 +184,7 @@
       .description {
         padding-top: 40px;
         &-title {
-          font-size: 26px;
+          font-size: 24px;
         }
         &-text {
           margin-top: 20px;

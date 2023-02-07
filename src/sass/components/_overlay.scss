@@ -105,3 +105,316 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .overlay {
+    .popup {
+      // position: fixed;
+      // z-index: 4;
+      // left: 50%;
+      // top: 150px;
+      width: 700px;
+      // transform: translateX(-50%);
+      // &-close {
+      //   position: absolute;
+      //   right: -20px;
+      //   top: -35px;
+      //   cursor: pointer;
+      //   font-size: 35px;
+      //   color: #fff;
+      //   font-weight: 300;
+      // }
+      // &-title {
+      //   display: block;
+      //   width: 100%;
+      //   height: 71px;
+      //   line-height: 71px;
+      //   margin: 0;
+      //   background-color: $main-color;
+      //   color: #ffffff;
+      //   text-transform: uppercase;
+      //   font-size: 21px;
+      //   font-weight: 500;
+      //   text-align: center;
+      // }
+      &-form {
+        //   background: url(../img/modal.jpg) center no-repeat;
+        //   background-size: cover;
+        padding: 35px 67px 50px 67px;
+        //   color: #fff;
+        //   &-header {
+        //     padding: 0;
+        //     font-weight: 400;
+        //     line-height: 27px;
+        //     font-size: 30px;
+        //     text-align: center;
+        //   }
+        //   &__label {
+        //     display: block;
+        //     margin-top: 23px;
+        //     font-size: 20px;
+        //     font-weight: 300;
+        //     text-align: center;
+        //   }
+        //   &__input {
+        //     width: 365px;
+        //     height: 56px;
+        //     margin-top: 17px;
+        //     font-size: 18px;
+        //     background-color: $main-color;
+        //     border: none;
+        //     color: #fff;
+        //     text-align: center;
+        //   }
+        //   &__btn {
+        //     width: 180px;
+        //     height: 56px;
+        //     font-size: 15px;
+        //     line-height: 22px;
+        //     margin-left: 16px;
+        //     background-color: transparent;
+        //     color: $main-color;
+        //     border: 1px solid $main-color;
+        //     cursor: pointer;
+        //     &:hover {
+        //       box-shadow: 0 0 10px $main-color;
+        //     }
+        //   }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .overlay {
+    .popup {
+      // position: fixed;
+      // z-index: 4;
+      // left: 50%;
+      // top: 150px;
+      width: 600px;
+      // transform: translateX(-50%);
+      // &-close {
+      //   position: absolute;
+      //   right: -20px;
+      //   top: -35px;
+      //   cursor: pointer;
+      //   font-size: 35px;
+      //   color: #fff;
+      //   font-weight: 300;
+      // }
+      // &-title {
+      //   display: block;
+      //   width: 100%;
+      //   height: 71px;
+      //   line-height: 71px;
+      //   margin: 0;
+      //   background-color: $main-color;
+      //   color: #ffffff;
+      //   text-transform: uppercase;
+      //   font-size: 21px;
+      //   font-weight: 500;
+      //   text-align: center;
+      // }
+      &-form {
+        //   background: url(../img/modal.jpg) center no-repeat;
+        //   background-size: cover;
+        padding: 35px 17px 50px 17px;
+        //   color: #fff;
+        //   &-header {
+        //     padding: 0;
+        //     font-weight: 400;
+        //     line-height: 27px;
+        //     font-size: 30px;
+        //     text-align: center;
+        //   }
+        //   &__label {
+        //     display: block;
+        //     margin-top: 23px;
+        //     font-size: 20px;
+        //     font-weight: 300;
+        //     text-align: center;
+        //   }
+        //   &__input {
+        //     width: 365px;
+        //     height: 56px;
+        //     margin-top: 17px;
+        //     font-size: 18px;
+        //     background-color: $main-color;
+        //     border: none;
+        //     color: #fff;
+        //     text-align: center;
+        //   }
+        //   &__btn {
+        //     width: 180px;
+        //     height: 56px;
+        //     font-size: 15px;
+        //     line-height: 22px;
+        //     margin-left: 16px;
+        //     background-color: transparent;
+        //     color: $main-color;
+        //     border: 1px solid $main-color;
+        //     cursor: pointer;
+        //     &:hover {
+        //       box-shadow: 0 0 10px $main-color;
+        //     }
+        //   }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .overlay {
+    .popup {
+      // position: fixed;
+      // z-index: 4;
+      // left: 50%;
+      // top: 150px;
+      width: 420px;
+      // transform: translateX(-50%);
+      // &-close {
+      //   position: absolute;
+      //   right: -20px;
+      //   top: -35px;
+      //   cursor: pointer;
+      //   font-size: 35px;
+      //   color: #fff;
+      //   font-weight: 300;
+      // }
+      &-title {
+        // display: block;
+        // width: 100%;
+        // height: 71px;
+        // line-height: 71px;
+        // margin: 0;
+        // background-color: $main-color;
+        // color: #ffffff;
+        // text-transform: uppercase;
+        font-size: 20px;
+        // font-weight: 500;
+        // text-align: center;
+      }
+      &-form {
+        //   background: url(../img/modal.jpg) center no-repeat;
+        //   background-size: cover;
+        padding: 35px 10px 50px 10px;
+        //   color: #fff;
+        &-header {
+          //     padding: 0;
+          //     font-weight: 400;
+          //     line-height: 27px;
+          font-size: 24px;
+          //     text-align: center;
+        }
+        &__label {
+          //     display: block;
+          //     margin-top: 23px;
+          font-size: 18px;
+          //     font-weight: 300;
+          //     text-align: center;
+        }
+        &__input {
+          width: 200px;
+          //     height: 56px;
+          //     margin-top: 17px;
+          //     font-size: 18px;
+          //     background-color: $main-color;
+          //     border: none;
+          //     color: #fff;
+          //     text-align: center;
+        }
+        //   &__btn {
+        //     width: 180px;
+        //     height: 56px;
+        //     font-size: 15px;
+        //     line-height: 22px;
+        //     margin-left: 16px;
+        //     background-color: transparent;
+        //     color: $main-color;
+        //     border: 1px solid $main-color;
+        //     cursor: pointer;
+        //     &:hover {
+        //       box-shadow: 0 0 10px $main-color;
+        //     }
+        //   }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .overlay {
+    .popup {
+      // position: fixed;
+      // z-index: 4;
+      // left: 50%;
+      // top: 150px;
+      width: 280px;
+      // transform: translateX(-50%);
+      // &-close {
+      //   position: absolute;
+      //   right: -20px;
+      //   top: -35px;
+      //   cursor: pointer;
+      //   font-size: 35px;
+      //   color: #fff;
+      //   font-weight: 300;
+      // }
+      &-title {
+        // display: block;
+        // width: 100%;
+        // height: 71px;
+        // line-height: 71px;
+        // margin: 0;
+        // background-color: $main-color;
+        // color: #ffffff;
+        // text-transform: uppercase;
+        font-size: 18px;
+        // font-weight: 500;
+        // text-align: center;
+      }
+      &-form {
+        //   background: url(../img/modal.jpg) center no-repeat;
+        //   background-size: cover;
+        padding: 35px 20px 50px 20px;
+        //   color: #fff;
+        // &-header {
+        //     padding: 0;
+        //     font-weight: 400;
+        //     line-height: 27px;
+        // font-size: 24px;
+        //     text-align: center;
+        // }
+        &__label {
+          //     display: block;
+          //     margin-top: 23px;
+          font-size: 16px;
+          //     font-weight: 300;
+          //     text-align: center;
+        }
+        &__input {
+          width: 100%;
+          //     height: 56px;
+          //     margin-top: 17px;
+          //     font-size: 18px;
+          //     background-color: $main-color;
+          //     border: none;
+          //     color: #fff;
+          //     text-align: center;
+        }
+        &__btn {
+          width: 100%;
+          //     height: 56px;
+          //     font-size: 15px;
+          //     line-height: 22px;
+          margin-top: 20px;
+          margin-left: 0px;
+          //     background-color: transparent;
+          //     color: $main-color;
+          //     border: 1px solid $main-color;
+          //     cursor: pointer;
+          //     &:hover {
+          //       box-shadow: 0 0 10px $main-color;
+          //     }
+        }
+      }
+    }
+  }
+}

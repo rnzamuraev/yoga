@@ -181,11 +181,11 @@
 @media (max-width: 768px) {
   .contact {
     width: 100%;
+    margin-top: 120px;
     // height: 350px;
     // display: flex;
     // background-color: $dark;
     // margin: 0 auto;
-    // margin-top: 150px;
     // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
     &-img {
       width: 45%;
@@ -247,7 +247,7 @@
     // display: flex;
     // background-color: $dark;
     // margin: 0 auto;
-    // margin-top: 150px;
+    margin-top: 100px;
     // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
     &-img {
       width: 100%;

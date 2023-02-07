@@ -45,6 +45,7 @@
 }
 @media (max-width: 768px) {
   .timer {
+    margin-top: 120px;
     &-title {
       padding: 0 35px;
     }
@@ -57,10 +58,12 @@
 }
 @media (max-width: 640px) {
   .timer {
+    margin-top: 100px;
     &-title {
       padding: 0 0px;
+      font-size: 26px;
     }
-     &-action {
+    &-action {
       font-size: 20px;
     }
     &-numbers {
@@ -73,10 +76,11 @@
 }
 @media (max-width: 480px) {
   .timer {
-    margin-top: 100px;
+    // margin-top: 100px;
     &-title {
+      font-size: 24px;
       padding: 0 0px;
-      font-size: 26px;
+      // font-size: 26px;
     }
     &-action {
       margin-top: 30px;

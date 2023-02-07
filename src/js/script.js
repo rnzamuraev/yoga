@@ -16,6 +16,7 @@ import slider from "./parts/slider";
 import calc from "./parts/calc";
 import form from "./parts/form";
 import modal from "./parts/modal";
+import mask from "./parts/mask";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -24,6 +25,8 @@ window.addEventListener("DOMContentLoaded", () => {
   timer();
   slider();
   calc();
-  form();
+  form("form");
   modal();
+  form("popup-form");
+  mask("[name='phone']");
 });

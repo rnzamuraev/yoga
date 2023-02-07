@@ -202,8 +202,8 @@
 						Мы с вами свяжемся
 					</div>
 					<form action="#" id="form">
-						<input required type="email" placeholder="Ваша почта">
-						<input required type="tel" placeholder="Ваш телефон">
+						<input required type="email" name="email" placeholder="Ваша почта">
+						<input required type="tel" name="phone" placeholder="Ваш телефон">
 						<button type="submit">Отправить</button>
 					</form>
 				</div>
@@ -243,7 +243,7 @@
 			<div class="popup-title">
 				Форма обратной связи</div>
 			<div class="popup-form">
-				<form action="#" class="main-form">
+				<form action="#" class="main-form" id="popup-form">
 					<div class="popup-form-header">
 						Узнайте больше о своём отдыхе
 					</div>
@@ -251,7 +251,7 @@
 						Введите ваш номер телефона:
 					</label>
 					<input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
-					<button class="button popup-form__btn">
+					<button class="button popup-form__btn" type="submit">
 						Оставить заявку!
 					</button>
 				</form>
