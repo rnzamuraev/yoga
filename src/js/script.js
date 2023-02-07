@@ -26,7 +26,8 @@ window.addEventListener("DOMContentLoaded", () => {
   slider();
   calc();
   form("form");
-  modal();
+  modal(".more");
+  modal(".description-btn");
   form("popup-form");
   mask("[name='phone']");
 });
